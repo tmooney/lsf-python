@@ -131,8 +131,10 @@ def _open_jobinfo(job_id):
         raise LSFBindingException('Caught exception in lsb_openjobinfo_a')
 
     if job_info_head is None:
+        _unconditionally_close_jobinfo()
         raise InvalidJob(job_id)
     elif job_info_head == -1:
+        _unconditionally_close_jobinfo()
         raise LSFBindingException('lsb_openjobinfo_a failed, returning -1')
 
 
