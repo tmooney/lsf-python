@@ -123,7 +123,7 @@ def _read_jobinfo():
 def _open_jobinfo(job_id):
     try:
         job_info_head = api.lsb_openjobinfo_a(job_id,
-                None, None, None, None,
+                None, "all", None, None,
                 api.ALL_JOB)
     except:
         LOG.exception('Caught exception in lsb_openjobinfo_a')
