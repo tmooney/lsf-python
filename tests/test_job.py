@@ -12,7 +12,8 @@ class JobStatusTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.job = lsf.submit('ls',
-                options={'numProcessors': 1, 'maxNumProcessors': 1},
+                options={'numProcessors': 1, 'maxNumProcessors': 1,
+                    'jobGroup': '/test/job/group'},
                 rlimits={'threads': 1},
                 )
 
