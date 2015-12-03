@@ -33,7 +33,7 @@ class OptionTest(unittest.TestCase):
 
     def test_flag_group_2(self):
         test_options = {
-            'group': api.SUB2_JOB_GROUP,
+            'jobGroup': api.SUB2_JOB_GROUP,
         }
 
         for name, flag in test_options.iteritems():

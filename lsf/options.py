@@ -54,7 +54,7 @@ _OPTIONS = {o.name: o for o in
     [
         Option('beginTime', cast_with=int),
         Option('errFile', flag=api.SUB_ERR_FILE),
-        Option('group', flag=api.SUB2_JOB_GROUP, flag_group='options2'),
+        Option('jobGroup', flag=api.SUB2_JOB_GROUP, flag_group='options2'),
         Option('inFile', flag=api.SUB_IN_FILE),
         Option('jobName', flag=api.SUB_JOB_NAME),
         Option('mail_user', flag=api.SUB_MAIL_USER),
