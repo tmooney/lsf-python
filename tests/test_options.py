@@ -18,7 +18,7 @@ class OptionTest(unittest.TestCase):
             'errFile': api.SUB_ERR_FILE,
             'inFile': api.SUB_IN_FILE,
             'jobName': api.SUB_JOB_NAME,
-            'mail_user': api.SUB_MAIL_USER,
+            'mailUser': api.SUB_MAIL_USER,
             'outFile': api.SUB_OUT_FILE,
             'projectName': api.SUB_PROJECT_NAME,
             'queue': api.SUB_QUEUE,

@@ -57,7 +57,7 @@ _OPTIONS = {o.name: o for o in
         Option('jobGroup', flag=api.SUB2_JOB_GROUP, flag_group='options2'),
         Option('inFile', flag=api.SUB_IN_FILE),
         Option('jobName', flag=api.SUB_JOB_NAME),
-        Option('mail_user', flag=api.SUB_MAIL_USER),
+        Option('mailUser', flag=api.SUB_MAIL_USER),
         Option('maxNumProcessors', cast_with=int),
         Option('numProcessors', cast_with=int),
         Option('outFile', flag=api.SUB_OUT_FILE),
